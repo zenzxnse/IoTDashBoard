@@ -12,4 +12,10 @@ defmodule IotdashboardWeb.PageController do
     # so skip the default app layout.
     render(conn, :pollution, layout: false)
   end
+
+  def energyconsumption(conn, _params) do
+    # The energy consumption page is often custom made,
+    # so skip the default app layout.
+    render(conn, :energyconsumption, layout: false)
+  end
 end

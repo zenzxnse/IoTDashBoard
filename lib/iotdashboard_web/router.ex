@@ -19,6 +19,7 @@ defmodule IotdashboardWeb.Router do
 
     get "/", PageController, :home
     get "/pollution", PageController, :pollution
+    get "/energyconsumption", PageController, :energyconsumption
   end
 
   # Other scopes may use custom stacks.
