@@ -1,0 +1,44 @@
+<!-- home.html.heex -->
+<div class="min-h-screen bg-[radial-gradient(at_25%_25%,_white,_#f1f1f1_75%)]">
+  <!-- ▸ Navbar ------------------------------------------------------------ -->
+  <nav class="w-full bg-gray-100 shadow-lg">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Logo / brand  -->
+      <div class="flex items-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-auto text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+        </svg>
+        <span class="text-gray-800 font-semibold text-xl tracking-wide">Smart‑City IoT</span>
+      </div>
+
+      <!-- Optional extra nav items could go here -->
+    </div>
+  </nav>
+
+  
+  <main class="flex flex-1 flex-col items-center justify-center px-4 py-24 space-y-12 text-center">
+
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 dark:text-gray-100">
+      Real‑time Environmental Dashboard
+    </h1>
+
+    <!-- Buttons -->
+    <div class="w-full max-w-4xl space-y-8">
+      <!-- Pollution -->
+      <.link navigate={~p"/pollution"}
+              class="block w-full bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xl
+                     py-6 rounded-xl shadow-md transform transition ease-out duration-300
+                     hover:translate-x-2">
+        View Pollution Data
+      </.link>
+
+      <!-- Energy -->
+      <.link navigate={~p"/energyconsumption"}
+              class="block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xl
+                     py-6 rounded-xl shadow-md transform transition ease-out duration-300
+                     hover:translate-x-2">
+        View Energy Consumption
+      </.link>
+    </div>
+  </main>
+</div>
